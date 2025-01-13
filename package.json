@@ -1,0 +1,17 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "To do app",
+  "main": "main.js",
+  "scripts": {
+    "watch": "nodemon --exec electron .",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Muhammad Aleem",
+  "license": "ICS",
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  }
+}

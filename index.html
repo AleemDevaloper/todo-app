@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/sass/main.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="bar-a"></div>
+        <div id="bar">
+          <div class="row">
+            <div class="col-3">
+              <div class="d-flex justify-content-start align-items-center mx-2">
+                <button class="mx-1 p-2 rounded-circle " id="close"></button>
+                <button class="mx-1 p-2 rounded-circle " id="max"></button>
+                <button class="mx-1 p-2 rounded-circle " id="min"></button>
+              </div>
+            </div>
+            <div class="col-9">
+            </div>
+          </div>
+          
+        </div>
+        <section class="con" id="con">
+          <div class="imgs">
+            <div class="container-lg">
+              <div class="row mx-2">
+                <div class="col-5 d-flex justify-content-center align-items-center flex-column my-3">
+                  <img src="./assets/images/img.png" class="text">
+                  <button class="py-2 px-5 my-5 btn1" id="start">Start</button>
+                </div>
+                <div class="col-7 d-flex justify-content-center align-items-center my-3">
+                  <img src="./assets/images/img1.png" class="img1">
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <img src="./assets/images/bg.jpg" alt="" srcset="" class="bg">
+        </section>
+
+        
+    </div>
+
+       <div class="screen" id="start-screen">
+        
+        <section class="detials py-3 d-flex justify-content-center align-items-center h-100">
+          <div class="container">
+            
+              <div class="row">
+                <div class="col-5 d-flex justify-content-center align-items-center">
+                  <img src="./assets/images/R 2.png" alt="">
+                </div>
+                <div class="col-7 d-flex justify-content-center align-items-center">
+                  <div class="d-flex justify-content-start align-items-start flex-column w-100">   
+                      <h1 class="my-2 w-100">Enter Detials</h1>
+                      <input type="text" id="" placeholder="Enter Your First Name" class="my-2 p-3 px-5">
+                      <input type="text" id="" placeholder="Enter Your Last Name" class="my-2 p-3 px-5">
+                      <input type="text" id="name" placeholder="Enter Username" class="my-2 p-3 px-5">
+                      <span id="winalert" class="my-1"></span>
+                      <button class="py-2 px-5 btn2 my-2" type="submit" id="register">Register</button>
+                    
+                  </div>
+                 
+                </div>
+              </div>
+          </div>
+         
+        </section>
+       </div>
+
+
+        <!-- Addding screen section is start from here  -->
+        <div class="screen2" id="screen2">
+          <div class="main-app py-3 h-100 container-fluid container-lg">
+            <div class=" mx-sm-4 m-0 d-flex justify-content-center align-items-center">
+              <div class="row main w-100">
+                <div class="col-4 pt-5">
+                  <span></span>
+                  <h1 class="my-2">All Task</h1>
+    
+                  <ul class="m-1 my-3" id="itemList">
+                   
+                  </ul>
+                  
+                  <div class="row mt-5">
+                    <div class="col d-flex justify-content-start align-items-center"> 
+                      <span class="add" id="addclick">+</span>
+                      <h3 class="mx-3">Add Task</h3>
+                    </div> 
+                  </div>
+                  
+                  <div class="row my-2">
+                   <div class="col d-flex justify-content-start align-items-center">
+                    <span class="add">?</span> <h3 class="mx-3">Help</h3>
+                   </div>
+                  </div>
+                 
+                  <div class="row">
+                    <div class="col d-flex justify-content-start align-items-center"> 
+                      <span class="add" id="perclick">+</span>
+                      <h3 class="mx-3">Add Permanent Tasks</h3>
+                    </div> 
+                  </div>
+
+
+
+                </div>
+
+                <!-- main data task screen  -->
+                <div class="col-8">
+                  <h1>Welcome <span id="username"></span> <img src="./assets/images/hand wave.png" alt=""></h1>
+         
+                  <div class="row my-2 mx-3">
+                    <div class="col-12">
+                      <div class="text-center"><h4>See The Detials of Tasks</h4></div>
+                      <div class="task-details" class="py-3 px-3 mt-5 m-2">
+                       <div id="details" class="p-4">
+
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+
+
+         <!-- Addding task section is start from here  -->
+        <section class="add-task" id="add-task">
+          <div class="container">
+            <div class="row task-header mx-lg-5 mx-4 my-3">
+              <div class="col d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-center align-items-start flex-column">
+                  <h4>Edit Task</h4>
+                  <span class="line"></span>
+                </div>
+                
+                
+                <button class="px-3 p-1 rounded" id="go-back">Go Back</button>
+              </div>
+            </div>
+
+            <div class="row data mx-lg-5 mx-4 my-2">
+              <div class="col">
+                <h5>Enter Titel</h5>
+                <input type="text" id="itemInput"  class="px-3 py-1" required>
+                <h5>Enter Date</h5>
+                <input type="date" id="add-itemdate" class="px-3 py-1" required>
+                <h5>Enter Time</h5>
+                <input type="time" id="add-itemtime" class="px-3 py-1" required>
+                <h5>Task Description</h5>
+                <textarea id="userdes" required></textarea>
+              </div>
+            </div>
+
+            <div class="row enter-data mx-lg-5 mx-4 my-2">
+              <div class="col d-flex justify-content-start align-items-center">
+                <button type="submit" class="py-1 rounded px-5" id="addButton">Done</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Adding permanent task is satrt from here  -->
+         <section class="permanent-task" id="permanent-task">
+          <div class="container">
+            <div class="row task-header mx-lg-5 mx-4 my-3">
+              <div class="col d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-center align-items-start flex-column">
+                  <h4>Edit Task</h4>
+                  <span class="line"></span>
+                </div>
+                
+                
+                <button class="px-3 p-1 rounded" id="per-go-back">Go Back</button>
+              </div>
+            </div>
+
+            <div class="row data mx-lg-5 mx-4 my-2">
+              <div class="col">
+                <h5>Enter Titel</h5>
+                <input type="text" id="peritemInput"  class="px-3 py-1" required>
+                <h5>Enter Time</h5>
+                <input type="time" id="peritemtime" class="px-3 py-1" required>
+                <h5>Task Description</h5>
+                <textarea id="peruserdes" required></textarea>
+              </div>
+            </div>
+
+            <div class="row enter-data mx-lg-5 mx-4 my-2">
+              <div class="col d-flex justify-content-start align-items-center">
+                <button type="submit" class="py-1 rounded px-5" id="per-addButton">Done</button>
+              </div>
+            </div>
+          </div>
+         </section>
+     
+    
+    
+      
+    <script src="assets/js/index.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

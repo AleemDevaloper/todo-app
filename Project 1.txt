@@ -1,0 +1,20 @@
+I this app i can put task name and also with time i can adjust this 
+app alarm when the task time .
+Mobile app and dekstop app
+Build simple but best small to do list app
+Having great ui/ux desing
+
+Reminder all pending task through notification with sound
+
+example
+https://www.youtube.com/watch?v=sz9K1e3LO4M
+
+
+
+TO do app information:
+
+Side bar:
+
+Add Task +
+
+Today Tasks
