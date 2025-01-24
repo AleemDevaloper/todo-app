@@ -1,0 +1,50 @@
+@import "./variables";
+#bar{
+    position: relative;
+    background-color: $white !important;
+    -webkit-app-region: drag;
+    height: 6vh;
+    width: 100vw;
+    border: 2px solid $black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    .row{
+        height: 100%;
+        position: relative;
+        .mx-2{
+            position: relative;
+            height: 100%;
+        }
+    }
+    button{
+        -webkit-app-region: no-drag;
+    }
+    .col-3{
+        -webkit-app-region: no-drag;
+    }
+    button:hover{
+     cursor: pointer;   
+    }
+    #close{
+        transition: all 0.5s;
+        background: #EC6A5E;
+    }
+    #close:hover{
+        background: #eb4535;
+    }
+    #max{
+        transition: all 0.5s;
+        background: #F5BF4F;
+    }
+    #max:hover{
+        background: #b07500; 
+    }
+    #min{
+        transition: all 0.5s;
+        background: #61C554;
+    }
+    #min:hover{
+        background: #14ac00;
+    }
+}

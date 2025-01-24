@@ -1,0 +1,332 @@
+
+// Starting point 
+#wrapper{
+    border-radius: 10px;
+    .con{
+        display: block;
+        position: relative;
+        height: 94vh;
+        width: 100vw; 
+        border-radius: 10px;
+        .bg{
+            position: relative;
+            height: 99vh;
+            width: 100vw;   
+        }
+        .imgs{
+            position: absolute;
+            top: 20%;
+            z-index: 1;
+            width: 100vw;
+            .btn1{
+                background-color: transparent;
+                color: #9B51E0;
+                text-decoration: none;
+                font-weight: 300;
+                border: 1px solid #EB5757;
+                border-radius: 8px;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+            .btn1:hover{
+                background-color: #EB5757;
+                color: white;
+            }
+        }
+    }
+   
+}
+
+// Register point 
+.screen{
+    display: none;
+    position: relative;
+    height: 94vh;
+    width: 100vw;
+    left: 0; 
+    right: 0; 
+    background: $white;
+   
+    .detials{
+        
+            h1{
+                font-weight: 600;
+                font-size: 40px;
+                width: 100%;
+              
+            }
+            img{
+                position: relative;
+                width: 80%;
+                height: 80%;
+            }
+            input{
+                border: 1px solid $black;
+                width: 100%;
+                border-radius: 10px;
+            }
+            .btn2{
+                background-color: transparent;
+                color: $black;
+                text-decoration: none;
+                font-weight: 300;
+                border: 1px solid #EB5757;
+                border-radius: 8px;
+                transition: all 0.5s;
+                cursor: pointer; 
+            }
+            .btn2:hover{
+                background-color: #EB5757;
+               color: white;
+            }
+            .h-80{
+                height: 80%;
+            }
+        
+    
+    }
+}
+
+
+// screen main screen is start from here 
+.screen2{
+    display: none;
+    position: relative;
+    height: 94vh;
+    left: 0; 
+    right: 0; 
+    background-color: $white;
+    .main{
+        height: 80vh;
+        .task-details{
+            border: 2px solid $black;
+            height: 65vh;
+            border-radius: 10px;
+        }
+    }
+    .add{
+     height: 30px;
+     width: 30px;
+     background-color: #EB5757;
+     color: $white;
+     border-radius: 50%;
+     border: 1px solid #9B51E0;
+     font-size: 24px;
+     padding: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.5s;
+    }
+    .add:hover{
+        cursor: pointer;
+        background-color: #9B51E0;
+        border: 1px solid #EB5757;
+    }
+
+    ul{
+        position: relative;
+        height: 30vh;
+        overflow-y: scroll;
+    }
+    ul::-webkit-scrollbar {
+        width: 5px;
+      }
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    }
+    li:hover{
+       cursor: pointer;
+       color: #9B51E0;
+    }
+/* Track */
+   ul::-webkit-scrollbar-track {
+    background: #9B51E0;
+  }
+  
+  /* Handle */
+  ul::-webkit-scrollbar-thumb {
+    background: #EB5757;
+  }
+  // ===================
+  //====Delte button=======
+  //=======================
+  .deleteButton{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid red;
+    border-radius: 15px;
+    color: red;
+    background: transparent;
+    transition: all .5s;
+    font-size: 12px;
+  }
+  .deleteButton:hover{
+    background: red;
+    color: white;
+    border: 1px solid #9B51E0;
+  }
+  
+}
+
+
+
+// Adding task section is tart from here 
+.add-task{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80vw;
+    height: 80vh;
+    background: #EB5757;
+    z-index: 1;
+    border-radius: 10px;
+  .container{
+   position: relative;
+   height: 100%;
+   .task-header{
+    height: 10%;
+    .line{
+        width: 50px;
+        height: 3px;
+        background: #9B51E0;
+    }
+   }
+  
+    .data{
+        position: relative;
+        height: 70%;
+        .col{
+            height: 90%;
+        }
+        h5{
+            color: $white;
+        }
+        textarea{
+            position: relative;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: none;
+            width: 100%;
+            min-height: 25vh;
+            @include minh(750px){
+                height: 30vh;
+            }
+            @include minh(994px){
+                height: 33vh;
+            }
+            @include minh(1094px){
+                height: 35vh;
+            }
+        }
+        textarea::-webkit-scrollbar {
+            width: 5px;
+          }
+        
+    /* Track */
+       textarea::-webkit-scrollbar-track {
+        background: #EB5757;
+      }
+      
+      /* Handle */
+      textarea::-webkit-scrollbar-thumb {
+        background: #9B51E0;
+      }
+        input{
+         border-radius: 10px;
+         width: 80%;
+         height: 10%;
+        }
+    }
+   .enter-data{
+     height: 10%;
+   }
+  }
+   
+}
+
+.permanent-task{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80vw;
+    height: 80vh;
+    background: #EB5757 !important;
+    z-index: 1;
+    border-radius: 10px;
+  .container{
+   position: relative;
+   height: 100%;
+   .task-header{
+    height: 10%;
+    .line{
+        width: 50px;
+        height: 3px;
+        background: #9B51E0;
+    }
+   }
+  
+    .data{
+        position: relative;
+        height: 70%;
+        .col{
+            height: 90%;
+        }
+        h5{
+            color: $white;
+        }
+        textarea{
+            position: relative;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: none;
+            width: 100%;
+            min-height: 25vh;
+            @include minh(750px){
+                height: 30vh;
+            }
+            @include minh(994px){
+                height: 33vh;
+            }
+            @include minh(1094px){
+                height: 35vh;
+            }
+        }
+        textarea::-webkit-scrollbar {
+            width: 5px;
+          }
+        
+    /* Track */
+       textarea::-webkit-scrollbar-track {
+        background: #EB5757;
+      }
+      
+      /* Handle */
+      textarea::-webkit-scrollbar-thumb {
+        background: #9B51E0;
+      }
+        input{
+         border-radius: 10px;
+         width: 80%;
+         height: 10%;
+        }
+    }
+   .enter-data{
+     height: 10%;
+   }
+  }
+   
+}

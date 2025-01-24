@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+input,
+button {
+  border: 0px;
+}
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  display: inline-block;
+}
+
+body {
+  background: transparent;
+  font-weight: 400;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 15px;
+  -webkit-app-region: no-drag;
+}
+
+#bar {
+  position: relative;
+  background-color: white !important;
+  -webkit-app-region: drag;
+  height: 6vh;
+  width: 100vw;
+  border: 2px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+#bar .row {
+  height: 100%;
+  position: relative;
+}
+#bar .row .mx-2 {
+  position: relative;
+  height: 100%;
+}
+#bar button {
+  -webkit-app-region: no-drag;
+}
+#bar .col-3 {
+  -webkit-app-region: no-drag;
+}
+#bar button:hover {
+  cursor: pointer;
+}
+#bar #close {
+  transition: all 0.5s;
+  background: #EC6A5E;
+}
+#bar #close:hover {
+  background: #eb4535;
+}
+#bar #max {
+  transition: all 0.5s;
+  background: #F5BF4F;
+}
+#bar #max:hover {
+  background: #b07500;
+}
+#bar #min {
+  transition: all 0.5s;
+  background: #61C554;
+}
+#bar #min:hover {
+  background: #14ac00;
+}
+
+#wrapper {
+  border-radius: 10px;
+}
+#wrapper .con {
+  display: block;
+  position: relative;
+  height: 94vh;
+  width: 100vw;
+  border-radius: 10px;
+}
+#wrapper .con .bg {
+  position: relative;
+  height: 99vh;
+  width: 100vw;
+}
+#wrapper .con .imgs {
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+  width: 100vw;
+}
+#wrapper .con .imgs .btn1 {
+  background-color: transparent;
+  color: #9B51E0;
+  text-decoration: none;
+  font-weight: 300;
+  border: 1px solid #EB5757;
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#wrapper .con .imgs .btn1:hover {
+  background-color: #EB5757;
+  color: white;
+}
+
+.screen {
+  display: none;
+  position: relative;
+  height: 94vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  background: white;
+}
+.screen .detials h1 {
+  font-weight: 600;
+  font-size: 40px;
+  width: 100%;
+}
+.screen .detials img {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+.screen .detials input {
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 10px;
+}
+.screen .detials .btn2 {
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  border: 1px solid #EB5757;
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.screen .detials .btn2:hover {
+  background-color: #EB5757;
+  color: white;
+}
+.screen .detials .h-80 {
+  height: 80%;
+}
+
+.screen2 {
+  display: none;
+  position: relative;
+  height: 94vh;
+  left: 0;
+  right: 0;
+  background-color: white;
+  /* Track */
+  /* Handle */
+}
+.screen2 .main {
+  height: 80vh;
+}
+.screen2 .main .task-details {
+  border: 2px solid black;
+  height: 65vh;
+  border-radius: 10px;
+}
+.screen2 .add {
+  height: 30px;
+  width: 30px;
+  background-color: #EB5757;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #9B51E0;
+  font-size: 24px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.screen2 .add:hover {
+  cursor: pointer;
+  background-color: #9B51E0;
+  border: 1px solid #EB5757;
+}
+.screen2 ul {
+  position: relative;
+  height: 30vh;
+  overflow-y: scroll;
+}
+.screen2 ul::-webkit-scrollbar {
+  width: 5px;
+}
+.screen2 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.screen2 li:hover {
+  cursor: pointer;
+  color: #9B51E0;
+}
+.screen2 ul::-webkit-scrollbar-track {
+  background: #9B51E0;
+}
+.screen2 ul::-webkit-scrollbar-thumb {
+  background: #EB5757;
+}
+.screen2 .deleteButton {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid red;
+  border-radius: 15px;
+  color: red;
+  background: transparent;
+  transition: all 0.5s;
+  font-size: 12px;
+}
+.screen2 .deleteButton:hover {
+  background: red;
+  color: white;
+  border: 1px solid #9B51E0;
+}
+
+.add-task {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80vw;
+  height: 80vh;
+  background: #EB5757;
+  z-index: 1;
+  border-radius: 10px;
+}
+.add-task .container {
+  position: relative;
+  height: 100%;
+}
+.add-task .container .task-header {
+  height: 10%;
+}
+.add-task .container .task-header .line {
+  width: 50px;
+  height: 3px;
+  background: #9B51E0;
+}
+.add-task .container .data {
+  position: relative;
+  height: 70%;
+  /* Track */
+  /* Handle */
+}
+.add-task .container .data .col {
+  height: 90%;
+}
+.add-task .container .data h5 {
+  color: white;
+}
+.add-task .container .data textarea {
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
+  min-height: 25vh;
+}
+@media (min-height: 750px) {
+  .add-task .container .data textarea {
+    height: 30vh;
+  }
+}
+@media (min-height: 994px) {
+  .add-task .container .data textarea {
+    height: 33vh;
+  }
+}
+@media (min-height: 1094px) {
+  .add-task .container .data textarea {
+    height: 35vh;
+  }
+}
+.add-task .container .data textarea::-webkit-scrollbar {
+  width: 5px;
+}
+.add-task .container .data textarea::-webkit-scrollbar-track {
+  background: #EB5757;
+}
+.add-task .container .data textarea::-webkit-scrollbar-thumb {
+  background: #9B51E0;
+}
+.add-task .container .data input {
+  border-radius: 10px;
+  width: 80%;
+  height: 10%;
+}
+.add-task .container .enter-data {
+  height: 10%;
+}
+
+.permanent-task {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80vw;
+  height: 80vh;
+  background: #EB5757 !important;
+  z-index: 1;
+  border-radius: 10px;
+}
+.permanent-task .container {
+  position: relative;
+  height: 100%;
+}
+.permanent-task .container .task-header {
+  height: 10%;
+}
+.permanent-task .container .task-header .line {
+  width: 50px;
+  height: 3px;
+  background: #9B51E0;
+}
+.permanent-task .container .data {
+  position: relative;
+  height: 70%;
+  /* Track */
+  /* Handle */
+}
+.permanent-task .container .data .col {
+  height: 90%;
+}
+.permanent-task .container .data h5 {
+  color: white;
+}
+.permanent-task .container .data textarea {
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
+  min-height: 25vh;
+}
+@media (min-height: 750px) {
+  .permanent-task .container .data textarea {
+    height: 30vh;
+  }
+}
+@media (min-height: 994px) {
+  .permanent-task .container .data textarea {
+    height: 33vh;
+  }
+}
+@media (min-height: 1094px) {
+  .permanent-task .container .data textarea {
+    height: 35vh;
+  }
+}
+.permanent-task .container .data textarea::-webkit-scrollbar {
+  width: 5px;
+}
+.permanent-task .container .data textarea::-webkit-scrollbar-track {
+  background: #EB5757;
+}
+.permanent-task .container .data textarea::-webkit-scrollbar-thumb {
+  background: #9B51E0;
+}
+.permanent-task .container .data input {
+  border-radius: 10px;
+  width: 80%;
+  height: 10%;
+}
+.permanent-task .container .enter-data {
+  height: 10%;
+}/*# sourceMappingURL=main.css.map */
